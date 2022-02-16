@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
+$bg-color: #B3E5FC
+$font-theme: 'Poppins', sans-serif
+
+@mixin display 
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 4.5%
+
+%text-format
+    font-family: $font-theme
+    letter-spacing: 0.6px
+
+%btn-format
+    border-radius: 15px
+    margin-left: 60px
+    width: 280px
+    font-family: $font-theme
+    letter-spacing: 2px
+
+body
+    background-color: $bg-color
+
+.container
+    @include display()
+    .box
+        width: 400px
+        height: 500px
+        background-color: #00ACC1
+        box-shadow: 3px 3px 10px 0px #006064
+        .text-judul
+            font-family: $font-theme
+            letter-spacing: 0.1em
+        .logo
+            padding-left: 100px
+            display: flex
+            justify-content: center
+            width: 300px
+        .text-form
+            @extend %text-format
+            margin-left: 65px
+            font-size: 15px
+        .form-input
+            @extend %text-format
+            border-radius: 15px
+            font-size: 13px
+            margin-left: 60px
+            width: 280px
+        .btn
+            @extend %btn-format
+            background-color: #006064   
+        .btn:hover
+            @extend %btn-format
+            background-color: #B3E5FC
+            color: #006064
+        .text-span
+            font-family: $font-theme
+            letter-spacing: 0.6px
+            margin-left: 65px
+            font-size: 12.5px
+        .text-link
+            color: #fafafa
+            text-decoration: none
+        .text-link:hover
+            color:#006064
+    

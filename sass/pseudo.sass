@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
+$bg-color: #B3E5FC
+$font-theme: 'Poppins', sans-serif
+
+
+@mixin display 
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 2%
+
+%text-format
+    font-family: $font-theme
+    letter-spacing: 0.6px
+
+%btn-format
+    border-radius: 15px
+    margin-left: 60px
+    width: 280px
+    font-family: $font-theme
+    letter-spacing: 2px
+
+body
+    background-color: $bg-color
+
+.container
+    @include display()
+    .box
+        width: 400px
+        height: 575px
+        background-color: #00ACC1
+        box-shadow: 3px 3px 10px 0px #006064
+    .logo
+        padding-left: 100px
+        display: flex
+        justify-content: center
+        width: 300px
+    .vertical
+        border-left: 2px dashed white
+        height: 50px
+        margin-left: 46px
+    .text-judul
+        font-family: $font-theme
+        letter-spacing: 0.1em
+        font-size: 30px
+    .text-list
+        @extend %text-format
+        margin-left: 65px
+        margin-right: 65px
+        font-size: 20px
+        color: #fafafa
+    ul
+        li
+            position: relative
+        li:after
+            content: ""
+            position: absolute
+            top: 0px
+        li:before
+            content: ""
+            position: absolute
+            left: -18px
+            border-left: 1px dashed white
+            width: 1px
+            height: 130%
+            top: 20px
+        li:first-child:before
+            top: 21px
+            height: 130%
+            
+        li:last-child:before
+            visibility: hidden
+
+
+        
+

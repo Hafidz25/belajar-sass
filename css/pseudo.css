@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+.container .text-list {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.6px;
+}
+
+body {
+  background-color: #B3E5FC;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2%;
+}
+
+.container .box {
+  width: 400px;
+  height: 575px;
+  background-color: #00ACC1;
+  -webkit-box-shadow: 3px 3px 10px 0px #006064;
+          box-shadow: 3px 3px 10px 0px #006064;
+}
+
+.container .logo {
+  padding-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 300px;
+}
+
+.container .vertical {
+  border-left: 2px dashed white;
+  height: 50px;
+  margin-left: 46px;
+}
+
+.container .text-judul {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 30px;
+}
+
+.container .text-list {
+  margin-left: 65px;
+  margin-right: 65px;
+  font-size: 20px;
+  color: #fafafa;
+}
+
+.container ul li {
+  position: relative;
+}
+
+.container ul li:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+}
+
+.container ul li:before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  border-left: 1px dashed white;
+  width: 1px;
+  height: 130%;
+  top: 20px;
+}
+
+.container ul li:first-child:before {
+  top: 21px;
+  height: 130%;
+}
+
+.container ul li:last-child:before {
+  visibility: hidden;
+}
+/*# sourceMappingURL=pseudo.css.map */

@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+.container .box .text-form, .container .box .form-input {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.6px;
+}
+
+.container .box .btn, .container .box .btn:hover {
+  border-radius: 15px;
+  margin-left: 60px;
+  width: 280px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+}
+
+body {
+  background-color: #B3E5FC;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2%;
+}
+
+.container .box {
+  width: 400px;
+  height: 575px;
+  background-color: #00ACC1;
+  -webkit-box-shadow: 3px 3px 10px 0px #006064;
+          box-shadow: 3px 3px 10px 0px #006064;
+}
+
+.container .box .text-judul {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.container .box .logo {
+  padding-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 300px;
+}
+
+.container .box .text-form {
+  margin-left: 65px;
+  font-size: 15px;
+}
+
+.container .box .form-input {
+  border-radius: 15px;
+  font-size: 13px;
+  margin-left: 60px;
+  width: 280px;
+}
+
+.container .box .btn {
+  background-color: #006064;
+}
+
+.container .box .btn:hover {
+  background-color: #B3E5FC;
+  color: #006064;
+}
+
+.container .box .text-span {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.6px;
+  margin-left: 65px;
+  font-size: 12.5px;
+}
+
+.container .box .text-link {
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.container .box .text-link:hover {
+  color: #006064;
+}
+/*# sourceMappingURL=reg.css.map */
